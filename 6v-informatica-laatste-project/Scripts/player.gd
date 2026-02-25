@@ -5,7 +5,15 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -450.0
 
-
+var current_level = 0
+var level_scenes = [
+	
+]
+	
+func next_level():
+		current_level +=1
+	
+	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	
@@ -34,3 +42,8 @@ func _physics_process(delta: float) -> void:
 		animated_sprite_2d.flip_h = false
 	elif direction == -1.0:
 		animated_sprite_2d.flip_h = true
+
+func die():
+	get_tree().reload_current_scene()
+	
+	

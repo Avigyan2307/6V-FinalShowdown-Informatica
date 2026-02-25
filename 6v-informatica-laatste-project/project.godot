@@ -15,6 +15,11 @@ run/main_scene="uid://gxdvpodif72"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=620
+window/size/viewport_height=360
+
 [input]
 
 jump={

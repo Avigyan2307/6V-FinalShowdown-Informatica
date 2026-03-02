@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://gxdvpodif72"]
 
-[ext_resource type="Texture2D" uid="uid://blb52gtcg8qf7" path="res://icon.svg" id="1_o8j2a"]
-[ext_resource type="PackedScene" uid="uid://b870n1o8uf078" path="res://Non_levels/player.tscn" id="2_0cu1x"]
+[ext_resource type="Texture2D" uid="uid://blb52gtcg8qf7" path="res://icon.svg" id="1_dl4mt"]
+[ext_resource type="PackedScene" uid="uid://b870n1o8uf078" path="res://Scenes/Non_levels/player.tscn" id="2_s8jsh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jjvhh"]
 size = Vector2(610, 109.5)
@@ -18,8 +18,8 @@ shape = SubResource("RectangleShape2D_jjvhh")
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1468733543]
 position = Vector2(300.00003, 285)
 scale = Vector2(4.734375, 1)
-texture = ExtResource("1_o8j2a")
+texture = ExtResource("1_dl4mt")
 metadata/_edit_group_ = true
 
-[node name="Player - CB2D" parent="." unique_id=1634954382 instance=ExtResource("2_0cu1x")]
+[node name="Player - CB2D" parent="." unique_id=1634954382 instance=ExtResource("2_s8jsh")]
 position = Vector2(184, 48)

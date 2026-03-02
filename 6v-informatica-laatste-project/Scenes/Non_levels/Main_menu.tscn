@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bmkps63xqmhdl"]
+
+[ext_resource type="Script" uid="uid://dpnh6q3io1u5w" path="res://Scripts/menu_buttonL1.gd" id="1_0ba4t"]
+
+[node name="MainMenu" type="Node2D" unique_id=883927437]
+
+[node name="MenuButton" type="MenuButton" parent="." unique_id=588270020]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Hi this right here is a button"
+script = ExtResource("1_0ba4t")

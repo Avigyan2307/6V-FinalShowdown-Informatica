@@ -2,10 +2,10 @@ class_name Player extends CharacterBody2D
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 
-const SPEED = 300.0
+var SPEED = 300.0
 var JUMP_POWER = 1.7
 var JUMP_CHARGE_DUR = 0
-const JUMP_VELOCITY = -650.0
+var JUMP_VELOCITY = -650.0
 	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -36,7 +36,7 @@ func _physics_process(delta: float) -> void:
 	elif direction == -1.0:
 		animated_sprite_2d.flip_h = true
 
-func die():
+func player_die():
 	get_tree().reload_current_scene()
 	
 	

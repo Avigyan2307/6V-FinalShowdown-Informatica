@@ -6,18 +6,6 @@ const SPEED = 300.0
 var JUMP_POWER = 1.7
 var JUMP_CHARGE_DUR = 0
 const JUMP_VELOCITY = -650.0
-
-var current_level = 0
-var level_scenes = [
-	"res://Levels/main.tscn",
-]
-	
-func next_level():
-	current_level += 1
-	if current_level < level_scenes.size():
-		get_tree().change_scene_to_file(level_scenes[current_level])
-	else:
-		get_tree().change_scene_to_file("res://Levels/Main_menu.tscn")
 	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

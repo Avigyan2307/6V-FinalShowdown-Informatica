@@ -1,6 +1,6 @@
 class_name SceneManager extends Node
 
-const PLAYER_SCENE = preload("res://Scenes/Non_Levels/player.tscn")
+const PLAYER_SCENE = preload("res://Scenes/player/player.tscn")
 
 var player: Player
 
@@ -24,7 +24,7 @@ func change_scene(to_scene_name: String) -> void:
 
 	print("Current scene:", new_scene)
 	print("Player:", player)
-	print("Player parent:", player.get_parent() if player else "NO PLAYER")
+
 
 	if new_scene == null:
 		push_error("NEW SCENE IS NULL")

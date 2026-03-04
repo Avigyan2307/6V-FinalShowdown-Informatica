@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cuvfox71ybchh"]
+
+[ext_resource type="PackedScene" uid="uid://bmkps63xqmhdl" path="res://Scenes/Main_menu.tscn" id="1_rviog"]
+
+[node name="Node2D" type="Node2D" unique_id=1623766338]
+
+[node name="MainMenu" parent="." unique_id=883927437 instance=ExtResource("1_rviog")]

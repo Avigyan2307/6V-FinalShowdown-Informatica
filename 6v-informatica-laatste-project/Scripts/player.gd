@@ -31,20 +31,8 @@ func _physics_process(delta: float) -> void:
 		animated_sprite_2d.animation = "jump"
 	# Handle jump.
 	if Input.is_action_pressed("jump") and is_on_floor():
-		while Input.is_action_pressed("jump"):
-			JUMP_CHARGE_DUR += 1
-			print(JUMP_CHARGE_DUR)
+		velocity.y = JUMP_VELOCITY
 			
-	if JUMP_CHARGE_DUR != 0 and is_on_floor():
-		print(" I Work")
-		if JUMP_CHARGE_DUR >= 50:
-			velocity.y = JUMP_VELOCITY * JUMP_POWER
-			JUMP_CHARGE_DUR = 0
-			print("I work too")
-		else:
-			velocity.y = JUMP_VELOCITY
-			JUMP_CHARGE_DUR = 0
-			print("Me too")
 	# Get the input direction and handle the movement/deceleration.
 
 	var direction := Input.get_axis("left", "right")

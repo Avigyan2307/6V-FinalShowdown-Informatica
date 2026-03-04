@@ -290,17 +290,17 @@ script = ExtResource("1_3smsa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=978525663]
 texture_filter = 1
+position = Vector2(3, -21)
 sprite_frames = SubResource("SpriteFrames_8eeqe")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.15403457
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=307921846]
-position = Vector2(-5, 21)
+position = Vector2(-2, 0)
 shape = SubResource("RectangleShape2D_5x828")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1650152239]
-zoom = Vector2(1.5, 1.5)
 limit_smoothed = true
 position_smoothing_enabled = true
 drag_horizontal_enabled = true

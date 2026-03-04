@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b870n1o8uf078" path="res://Scenes/Non_levels/player.tscn" id="1_uwm0f"]
 
-[node name="level 1" type="Node2D" unique_id=106429122]
+[node name="level 1 root" type="Node2D" unique_id=106429122]
 
 [node name="Player - CB2D" parent="." unique_id=1634954382 instance=ExtResource("1_uwm0f")]
 position = Vector2(411, 227)

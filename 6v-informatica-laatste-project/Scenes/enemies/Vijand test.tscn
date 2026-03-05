@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cix63fbxd7ix6"]
+
+[ext_resource type="Texture2D" uid="uid://bwu75n2jidbyy" path="res://Temporary assets/Finalboss.png" id="1_pxtfv"]
+
+[node name="VijandTest" type="Node2D" unique_id=1807536991]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=231141245]
+position = Vector2(259, 136)
+texture = ExtResource("1_pxtfv")
